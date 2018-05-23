@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Whatsapp-baracus",
+    "description": "Baracus give energy to your whatsapp web client",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/*"
+            ],
+            "js": [
+                "wa-baracus.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        "wp-baracus.js",
+        "baracus.jpg"
+    ]
+}
